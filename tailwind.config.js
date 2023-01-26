@@ -119,6 +119,10 @@ module.exports = {
       fontFamily: {
         "nunito-sans": "Nunito Sans",
       },
+      boxShadow: {
+        custom:
+          "0px 20px 24px -4px rgba(0, 109, 119, 0.08), 0px 8px 8px -4px rgba(0, 109, 119, 0.03)",
+      },
     },
   },
   plugins: [],

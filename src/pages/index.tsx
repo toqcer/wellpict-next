@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import HomeLayout from "@/layouts/HomeLayout";
 import { HomeHero } from "@/sections/Home";
 import HomeAnalytics from "@/sections/Home/HomeAnalytics";
+import HomeSummaryCard from "@/sections/Home/HomeSummaryCard";
 
 const Home: NextPage = () => {
   return (
@@ -11,8 +12,9 @@ const Home: NextPage = () => {
         <div className="col-span-12 lg:col-span-9 ">
           <HomeHero />
         </div>
-        <div className="col-span-12 lg:col-span-3 bg-secondary-1-300">
+        <div className="col-span-12 lg:col-span-3">
           <HomeAnalytics />
+          <HomeSummaryCard />
         </div>
       </main>
     </HomeLayout>
