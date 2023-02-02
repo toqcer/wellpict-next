@@ -16,7 +16,7 @@ export default function LineBaseOption() {
     scales: {
       x: {
         grid: {
-          lineWidth: 0,
+          display: false,
         },
         angleLines: {
           display: false,
@@ -30,12 +30,13 @@ export default function LineBaseOption() {
         },
       },
       y: {
+        grid: {},
+        angleLines: {
+          display: false,
+        },
         ticks: {
           display: false,
-          showLabelBackdrop: true,
-          backdropColor: "hsla(185, 100%, 17%, 1)",
           padding: 0,
-          labelOffset: 0,
         },
       },
     },
@@ -50,7 +51,7 @@ export default function LineBaseOption() {
           textAlign: "center",
           color: "#697586",
           pointStyle: "circle",
-          padding: 8,
+          padding: 20,
         },
       },
     },

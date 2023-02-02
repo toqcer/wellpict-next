@@ -4,6 +4,7 @@ import HomeLayout from "@/layouts/HomeLayout";
 import { HomeHero } from "@/sections/Home";
 import HomeAnalytics from "@/sections/Home/HomeAnalytics";
 import HomeSummaryCard from "@/sections/Home/HomeSummaryCard";
+import HomeSummaryContry from "@/sections/Home/HomeSummaryContry";
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,8 @@ const Home: NextPage = () => {
         </div>
         <div className="col-span-12 lg:col-span-3">
           <HomeAnalytics />
-          <HomeSummaryCard />
+          <HomeSummaryCard eachValue={[4862, 2671, 3571]} />
+          <HomeSummaryContry />
         </div>
       </main>
     </HomeLayout>
